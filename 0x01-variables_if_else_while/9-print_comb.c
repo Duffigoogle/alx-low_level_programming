@@ -11,17 +11,17 @@
  */
 int main(void)
 {
-	int c = 0;
-
-	while (c < 10)
+	int i = 0;
+	
+	while (i < 10)
 	{
-		putchar(48 + c);				
-		if (c != 9)
+		putchar(i + '0');
+		if (i < 9)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(44);
+			putchar(32);
 		}
-		c++;
+		i++;
 	}
 	putchar('\n');
 	
