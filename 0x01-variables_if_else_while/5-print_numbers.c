@@ -2,19 +2,19 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - Entry block
- * Description: print single digit numbers
+ * main - main block
+ * Description: print all numbers of base 10, starting from 0.
  * Return: 0
  */
 int main(void)
 {
-	char c = '0';
+	int i;
 
-	while (c <= '9')
+	for (i = 0; i < 10; i++)
 	{
-		putchar(c);							c++;
+		printf("%i", i);
 	}
-	
 	putchar('\n');
+	
 	return (0);
 }

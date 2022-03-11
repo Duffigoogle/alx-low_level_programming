@@ -2,8 +2,11 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
+ * Description: Print all possible combinations for single-digit numbers.
+ * Numbers must be separated by commas and a space.
+ * You can only use `putchar` to print to console
+ * You can only use `putchar` up to four times.
+ * You are not allowed to use any variable of type `char`.
  * Return: 0
  */
 int main(void)
@@ -14,11 +17,13 @@ int main(void)
 	{
 		putchar(48 + c);				
 		if (c != 9)
-		{									putchar(',');
+		{
+			putchar(',');
 			putchar(' ');
 		}
-		c++;						
+		c++;
 	}
 	putchar('\n');
+	
 	return (0);
 }

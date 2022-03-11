@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - entry point
- * Description: print alphabets
+ * main - main block
+ * Description: Use `putchar` function to print alphabets.
  * Return: 0
  */
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 	{
 		putchar(c);							c++;
 	}
-
 	putchar('\n');
+	
 	return (0);
 }
