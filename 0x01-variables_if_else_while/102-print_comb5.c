@@ -26,7 +26,7 @@ int main(void)
 		for (j = 0; j < 100; j++)
 		{
 			c = j / 10; /* doubles snum */
-			d = j % 10; /* singles snum */	
+			d = j % 10; /* singles snum */
 			if (a < c || (a == c && b < d))
 			{
 				putchar(a + '0');
