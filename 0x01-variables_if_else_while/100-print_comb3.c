@@ -15,7 +15,6 @@ int main(void)
 {
 	int i, j, k;
 	i = 0;
-	
 	while (i < 100)
 	{
 		j = i % 10; /* singles digit */
