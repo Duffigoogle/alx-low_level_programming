@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - This Function prints _putchar using the local header file 
+ * main: This Function prints _putchar using the local header file 
  * Return: 0 (Success)
  */
 
