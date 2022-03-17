@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet-this prints a - z
- * Description: Write a function that prints the alphabet, in lowercase, followed by a new line. 
+ * Description: Write a function that prints the alphabet, in lowercase, followed by a new line.
  * Return: Always 0.
  */
 
