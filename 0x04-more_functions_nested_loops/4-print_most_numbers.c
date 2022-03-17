@@ -2,6 +2,8 @@
 
 /**
  * print_most_numbers - prints the numbers
+ * Description: skips 2 & 4
+ * Returns: always void
  */
 void print_most_numbers(void)
 {

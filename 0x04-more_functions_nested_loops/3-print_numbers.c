@@ -3,6 +3,7 @@
 /**
  * print_numbers - prints the numbers
  * let the numbers speak for themselves
+ * Return: always void
  */
 void print_numbers(void)
 {
