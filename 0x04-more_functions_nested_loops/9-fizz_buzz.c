@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - check the code for Holberton School students.
  * Return: void.
@@ -10,7 +11,7 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 15 == 0)
+		if ((i % 15) == 0)
 		{
 			printf("FizzBuzz ");
 		}
