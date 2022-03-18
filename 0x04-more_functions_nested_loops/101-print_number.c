@@ -26,5 +26,5 @@ void print_unsigned_int(unsigned int n)
 	{
 		print_unsigned_int(n / 10);
 	}
-	_putchar((n % 10) * '0');
+	_putchar((n % 10) + '0');
 }
