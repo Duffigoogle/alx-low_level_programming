@@ -1,4 +1,5 @@
 #include <stdio.h>
+void fizz_buzz(void);
 
 /**
  * main - check the code for Holberton School students.
