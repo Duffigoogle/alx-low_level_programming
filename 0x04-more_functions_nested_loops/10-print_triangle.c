@@ -21,7 +21,7 @@ void print_triangle(int size)
 	{
 		n = 0;
 		while (n < size)
-			_putchar((n++ < spaceX) ? ' ': '#');
+			_putchar((n++ < spaceX) ? ' ' : '#');
 		_putchar('\n');
 		spaceX--;
 		i++;
