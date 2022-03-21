@@ -1,38 +1,24 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
-
 /**
- * main - print password.
- * Return: 0
+ * main - creates a password of sum 2772
+ * Return:0;
  */
-
 int main(void)
 {
-	int ascii = 2772, i = 0, j, random;
-	char password[100];
-	time_t t;
+	int keynumber, symbol, checksum;
 
-	srand((int) time(&t));
-	while (ascii > 126)
+	srand(time(NULL));
+	checksum = 2772;
+	keynumber = 0;
+	while (keynumber < (checksum - 122))
 	{
-		random = rand() % 126;
-		password[i] = random;
-		ascii -= random;
-		i++;
+		symbol = (rand() % (122 - 97 + 1)) + 97;/*to print mostly lowercaseletters*/
+		printf("%c", symbol);
+		keynumber = keynumber + symbol;
 	}
-	if (ascii > 0)
-		password[i] = ascii;
-	else
-	{
-		i--;
-	}
-
-	for (j = 0; j <= i; j++)
-	{
-		printf("%c", password[j]);
-	}
+	symbol = checksum - keynumber;
+	printf("%c", symbol);
 	return (0);
 }
