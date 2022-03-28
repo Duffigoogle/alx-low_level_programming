@@ -52,3 +52,8 @@ Format: see example
 You are allowed to use the standard library
 Note that in the following example we are casting an int[][] into an int*. This is not something you should do. The goal here is to make sure you understand how an array of array is stored in memory.
 
+Task 8 - Double pointer, double fun
+Write a function that sets the value of a pointer to a char.
+
+Prototype: void set_string(char **s, char *to);
+
