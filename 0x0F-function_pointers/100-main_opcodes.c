@@ -1,34 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - prints the opcodes of its own main function.
+ * main - prints its own opcodes
  * @argc: number of arguments
- * @argv: arguments array
- * Return: 0
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int con, byte;
+	int bytes, i;
+	char *arr;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
-	byte = atoi(argv[1]);
-	if (byte < 0)
+
+	bytes = atoi(argv[1]);
+
+	if (bytes < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
-	for (con = 0; con < (byte - 1); con++)
+
+	arr = (char *)main;
+
+	for (i = 0; i < bytes; i++)
 	{
-		if (byte != 0)
-			printf("%02hhx ", ((char *)main)[con]);
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
 	}
-	printf("%02hhx\n", ((char *)main)[con]);
 	return (0);
 }
-© 2022 GitHub, Inc.
-Terms
 
