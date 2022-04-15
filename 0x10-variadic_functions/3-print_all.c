@@ -49,7 +49,4 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n"), va_end(valist);
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
 
