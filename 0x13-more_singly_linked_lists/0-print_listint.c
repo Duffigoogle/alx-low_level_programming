@@ -8,14 +8,13 @@
 
 size_t print_listint(const listint_t *h)
 {
-	/* define len_list */
 	int len_list;
 
-	/* initialize the len_list */
 	len_list = 0;
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
+		
 		h = h->next;
 		len_list++;
 	}
