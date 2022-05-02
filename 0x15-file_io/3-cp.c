@@ -33,8 +33,5 @@ int main(int argc, char **argv)
 		return (98);
 	}
 
-	//lseek - investigar
-	//_read = read(_file_from, buffer, );
-
 	return (0);
 }
