@@ -3,14 +3,10 @@
 
 /**
  * error_file - checks if files can be opened.
- * Usage: cp file_from file_to.
  * @file_from: file_from.
  * @file_to: file_to.
- * @argc: arg count.
- * @argv: arguments.
+ * @argv: arguments vector.
  * Return: no return.
- *
- * if file_to already exists, truncate it.
  */
 void error_file(int file_from, int file_to, char *argv[])
 {
