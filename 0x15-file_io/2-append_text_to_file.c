@@ -7,7 +7,7 @@
  * Return: 1 on success and -1 on failure.
  * If filename is NULL return -1.
  * If text_content is NULL, do not add anything to the file.
- * Return 1 if the file exists and -1 if the file does not
+ * Return: 1 if the file exists and -1 if the file does not
  * exist or if you do not have the required
  * permissions to write the file.
  */
